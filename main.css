@@ -1,1 +1,151 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: 'Nunito';
+	background-color: #F7F7F7;
+	color: #666;
+
+}
+
+h1, h2, h3, h3 {
+	color: black;
+}
+
+.sidebar {
+	background-color: rgba(19, 193, 165, 1);
+	padding: 5vw;
+}
+
+.grid-item {
+	background-color: gray;
+	padding: 3vw;
+	border-radius: 0.35em;
+}
+
+a {
+	color: black;
+	font-weight: bold;
+}
+
+.icons i {
+	color: white;
+	margin-right: 8%;
+	
+}
+
+/* contact form */
+
+.contactForm {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin: 0 auto;
+}
+
+textarea {
+	height: 20%;
+	padding: 2%
+}
+input {
+	height: 5%;
+	padding: 2%;
+}
+
+button {
+	height: 5%;
+}
+
+.contact h2 {
+	text-align: center;
+}
+
+.contact {
+	padding-bottom: 10%;
+}
+
+
+
+
+
+
+/* Start Flex-Box CSS */
+
+.container {
+	display: flex;
+}
+
+
+.content {
+	padding: 3vw;
+}
+
+.grid-item {
+	margin-bottom: 1rem;
+}
+
+.icons {
+	display: flex;
+}
+
+
+/* Small Screens */
+@media only screen and (max-width: 900px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.sidebar {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+}
+
+/* large screens */
+@media only screen and (min-width: 901px) {
+
+	/* the flex: vw will make the content
+	 flex % of the view width; */
+	.sidebar {
+		position: fixed;
+		height: 100vh;
+		width: 30vw;
+	}
+
+	.sidebar-container {
+		width: 30vw;
+	}
+
+	.content {
+		flex: 70vw;
+	}
+
+	.grid {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.grid-item {
+		width: 47%;
+		margin-right: 1rem;
+		height: 35%
+	}
+
+}
 
