@@ -45,7 +45,7 @@ h1, h2, h3, h3 {
 	width: 100%;
 }
 
-.grid-item:hover img {
+.grid-item:hover {
   opacity: 0.5;
 }
 
