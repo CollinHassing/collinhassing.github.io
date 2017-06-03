@@ -45,6 +45,10 @@ h1, h2, h3, h3 {
 	width: 100%
 }
 
+.grid-item:hover img {
+  opacity: 0.5;
+}
+
 
 a {
 	color: black;
