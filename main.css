@@ -45,14 +45,6 @@ h1, h2, h3, h3 {
 	width: 100%;
 }
 
-.grid-item:hover img {
-  opacity: 0.5;
-}
-
-img {transition: .5s ease;
-}
-
-
 a {
 	color: black;
 	font-weight: bold;
