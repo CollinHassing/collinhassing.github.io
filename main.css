@@ -131,6 +131,12 @@ button {
 		margin: auto;
 		margin-bottom: 20px;
 	}
+	.contactForm {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		margin: 0 auto;
+	}
 
 
 }
