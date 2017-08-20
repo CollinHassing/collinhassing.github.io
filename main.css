@@ -7,6 +7,7 @@ body{
     font-size: 17px;
     line-height: 1.6;
     font-family: "Montserrat", sans-serif;
+    color: #757575;
 }
 
 .container {
@@ -41,6 +42,7 @@ header h1 {
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 header h2 {
      color: #fff;
@@ -50,7 +52,7 @@ header h2 {
     line-height: 1.2;
     margin-bottom: 60px;
 }
-header a{
+#seeMore{
     border: 1px solid #fff;
     padding: 10px;
     font-size: 18px;
@@ -64,7 +66,7 @@ header a{
     border-radius: 4px;
 }
 
-header a:hover{
+#seeMore:hover{
     border: 1px solid #F89820;
     background-color: #F89820;
 }
@@ -81,9 +83,11 @@ header a:hover{
     margin: auto;
     text-align: center;
 }
-
-
 /* universal */
+
+a:hover, a:focus, a:active, a:visited, a:link{
+    text-decoration: none;
+}
 div {
     display: block;
 }
@@ -97,6 +101,8 @@ div {
     padding: 10px;
     margin: 0 auto;
     font-size: 35px;
+    text-transform: uppercase;
+    color: #000;
 }
 
 
@@ -104,10 +110,14 @@ div {
 .about {
     margin-bottom: 65px;
 }
+
 .aboutContent{
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+}
+.aboutContent p {
+    line-height: 1.9;
 }
 .portrait img {
     height: 300px;
@@ -142,6 +152,10 @@ div {
     width: 300px;
 }
 
+.myProject img {
+    background-image: url("weather.jpg");
+}
+
 .projectImg {
     display: flex;
 }
@@ -159,6 +173,7 @@ div {
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 24px;
+    color: #000;
 }
 
 .projectLink a {
@@ -225,12 +240,15 @@ div {
 }
 
 .back-to-top i {
-    font-size: 65px;
+    font-size: 75px;
     color: #b2b2b2;
+    opacity: .8;
 }
-.back-to-top i:hover {
-        transform-origin: 50% 50% 0px;
+
+.back-to-top i:hover{
+    opacity: 1;
 }
+
 footer {
     width: 100%;
 }
@@ -240,11 +258,6 @@ footer p {
     font-size: 13px;
     text-transform: uppercase;
 }
-
-
-
-
-
 
 
 
