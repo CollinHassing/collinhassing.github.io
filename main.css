@@ -37,8 +37,7 @@ header .container {
 }
 header h1 {
     color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-size: 70px;
+    font-size: 4.5rem;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -46,8 +45,7 @@ header h1 {
 }
 header h2 {
      color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-size: 35px;
+    font-size: 2.1rem;
     font-weight: 200;
     line-height: 1.2;
     margin-bottom: 60px;
@@ -55,7 +53,7 @@ header h2 {
 #seeMore{
     border: 1px solid #fff;
     padding: 10px;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
@@ -91,16 +89,15 @@ a:hover, a:focus, a:active, a:visited, a:link{
 div {
     display: block;
 }
-
 .heading {
     display: flex;
-    margin: 0 auto 50px;
+    margin: 0 auto 55px;
     width: 100%;
 }
-.heading h2{
+.heading h3{
     padding: 10px;
     margin: 0 auto;
-    font-size: 35px;
+    font-size: 2.2rem;
     text-transform: uppercase;
     color: #000;
 }
@@ -119,17 +116,22 @@ div {
 .aboutContent p {
     line-height: 1.9;
 }
+.portrait {
+    height: 300px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+}
 .portrait img {
     height: 300px;
     width: 300px;
-    display: flex;
-    align-items: center;
 }
 
 .aboutMe {
     padding-left: 35px;
     display: flex;
     align-items: center;
+    width: 70%;
 }
 
 /* Portfolio Section */
@@ -152,34 +154,38 @@ div {
     width: 300px;
 }
 
-.myProject img {
-    background-image: url("weather.jpg");
-}
-
-.projectImg {
+.myProject .projectImg {
     display: flex;
+    height: 300px;
+    min-width: 300px;
+}
+.myProject .projectImg:nth-child(1) {
+    background-image: url(weather4.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .projectInfo {
     display: flex;
     flex-direction: column;
     padding-left: 35px;
+    width: 70%;
 }
 
 .projectInfo p {
     margin-bottom: 25px;
 }
 
-.projectInfo h3 {
+.projectInfo h4 {
     margin-top: 10px;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 1.4rem;
     color: #000;
 }
 
 .projectLink a {
     padding: 6px 20px;
     border: 1px solid #F89820;
-    font-size: 16px;
+    font-size: 1rem;
     text-transform: uppercase;
     color: #F89820;
     text-decoration: none;
@@ -201,11 +207,15 @@ div {
     flex-direction: column;
     align-items: center;
 }
-
-.contactMe a {
-    border: 1px solid #F89820;
-    padding: 8px 36px;
+.contactMe h5 {
+    letter-spacing: 1.7px;
     font-size: 22px;
+}
+.contactMe p{
+    border: 1px solid #F89820;
+    padding: 8px 46px;
+    font-size: 1.4rem;
+    font-weight: 400;
     color: #F89820;
     text-decoration: none;
     text-align: center;
@@ -213,14 +223,9 @@ div {
     transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     border-radius: 4px;
     text-transform: uppercase;
+    cursor: pointer;
 }
-.contactMe h3 {
-    letter-spacing: 1.7px;
-    font-size: 22px;
-    margin-bottom: 60px;
-}
-
-.contactMe a:hover {
+.contactMe p:hover {
     color: #fff;
     background-color: #F89820;
 }
@@ -258,7 +263,3 @@ footer p {
     font-size: 13px;
     text-transform: uppercase;
 }
-
-
-
-
