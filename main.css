@@ -1,10 +1,14 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+html{
+    font-size: 16px;
+}
 body{
-    font-size: 17px;
     line-height: 1.6;
     font-family: "Montserrat", sans-serif;
     color: #757575;
@@ -104,10 +108,6 @@ div {
 
 
 /* About Me Section */
-.about {
-    margin-bottom: 65px;
-}
-
 .aboutContent{
     display: flex;
     flex-direction: row;
@@ -132,6 +132,7 @@ div {
     display: flex;
     align-items: center;
     width: 70%;
+    font-size: 1.1rem;
 }
 
 /* Portfolio Section */
@@ -147,7 +148,10 @@ div {
 .myProject {
     display: flex;
     flex-direction: row;
-    margin: 0 auto 60px auto;
+    margin: 0 auto 75px auto;
+}
+.myProject:last-child {
+    margin-bottom: 0;
 }
 .myProject img {
     height: 300px;
@@ -173,6 +177,7 @@ div {
 
 .projectInfo p {
     margin-bottom: 25px;
+    font-size: 1.1rem;
 }
 
 .projectInfo h4 {
@@ -191,6 +196,7 @@ div {
     text-decoration: none;
     margin: 0 auto;
     border-radius: 6px;
+    transition: .4s;
 }
 
 .projectLink a:hover {
@@ -210,6 +216,7 @@ div {
 .contactMe h5 {
     letter-spacing: 1.7px;
     font-size: 22px;
+    margin: 50px auto;
 }
 .contactMe p{
     border: 1px solid #F89820;
@@ -229,7 +236,45 @@ div {
     color: #fff;
     background-color: #F89820;
 }
+
+
 /* footer */
+footer {
+    width: 100%;
+}
+footer p {
+    text-align: center;
+    color: #b2b2b2;
+    font-size:.8rem;
+    text-transform: uppercase;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.social a {
+    font-size: 2rem;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #b2b2b2;
+    padding: 10px;
+    transition: .5s;
+}
+.social a:visited {
+    text-decoration: none;
+    color: #b2b2b2;
+}
+.social a:active {
+    text-decoration: none;
+    color: #b2b2b2;
+}
+.social a:hover {
+    cursor: pointer;
+    color: #757575;
+}
+
+/* Back to Top arrow */
 .back-to-top{
     background: none;
     margin: 0;
@@ -254,12 +299,67 @@ div {
     opacity: 1;
 }
 
-footer {
-    width: 100%;
+
+/* Responsive */
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 820px){
+    html{
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+        min-width: 365px;
+    }
+
+
+    header {
+
+        min-height:260px;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    header h2{
+        font-size: 1.3rem;
+    }
+    #seeMore{
+        padding: 5px;
+        font-size: 1rem;
+        width: 150px;
+    }
+
+
+
+
+    .myProject{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .projectInfo {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .projectImg {
+        margin: 0 auto;
+    }
+
+
+    .portrait {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .aboutContent{
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .aboutMe {
+        padding: 0;
+        margin: 0 auto;
+    }
+
 }
-footer p {
-    text-align: center;
-    color: #b2b2b2;
-    font-size: 13px;
-    text-transform: uppercase;
-}
+
