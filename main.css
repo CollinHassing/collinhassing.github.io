@@ -1,4 +1,5 @@
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -132,7 +133,7 @@ div {
     display: flex;
     align-items: center;
     width: 70%;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 /* Portfolio Section */
@@ -177,7 +178,7 @@ div {
 
 .projectInfo p {
     margin-bottom: 25px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .projectInfo h4 {
@@ -336,29 +337,42 @@ footer p {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        line-height: 1.9;
     }
     .projectInfo {
         padding: 0;
         margin: 0 auto;
     }
     .projectImg {
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
     }
 
 
     .portrait {
-        margin: 0 auto;
-        margin-bottom: 20px;
+        margin: 0 auto 30px auto;
     }
     .aboutContent{
         flex-direction: column;
         text-align: center;
-        margin: 0 auto;
+        margin: 0 auto 30px auto;
     }
     .aboutMe {
         padding: 0;
         margin: 0 auto;
     }
 
-}
+    hr{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .contactMe p {
+        margin-bottom: 30px;
+    }
+    footer {
+        margin-bottom: 30px;
+    }
+    .social {
+        margin-bottom: 10px;
+    }
 
+}
