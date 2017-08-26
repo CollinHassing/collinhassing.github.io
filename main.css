@@ -1,5 +1,4 @@
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -133,7 +132,7 @@ div {
     display: flex;
     align-items: center;
     width: 70%;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* Portfolio Section */
@@ -162,9 +161,9 @@ div {
 .myProject .projectImg {
     display: flex;
     height: 300px;
-    min-width: 300px;
+    width: 300px;
 }
-.myProject .projectImg:nth-child(1) {
+.myProject:nth-child(1) .projectImg {
     background-image: url(weather4.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -178,7 +177,7 @@ div {
 
 .projectInfo p {
     margin-bottom: 25px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .projectInfo h4 {
@@ -345,6 +344,13 @@ footer p {
     }
     .projectImg {
         margin: 0 auto 20px auto;
+        width: 290px !important;
+        height: 290px !important;
+    }
+
+    .projectImg img {
+        width: 290px !important;
+        height: 290px !important;
     }
 
 
