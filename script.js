@@ -1,11 +1,7 @@
 var header = document.querySelector("header").clientHeight;
 
-// on scroll run the pageScroll function
+// on scroll show back to top arrow
 window.onscroll = function(){
-    pageScroll();
-}
-// when user scrolls past 250 px from the top of document show back-to-top element
-function pageScroll(){
     if(document.body.scrollTop > header || document.documentElement.scrollTop > header){
         document.getElementsByClassName("back-to-top")[0].style.display = "block";
     } else {document.getElementsByClassName("back-to-top")[0].style.display ="none";}
@@ -15,9 +11,21 @@ function pageScroll(){
 
  var scrollTop = document.querySelector(".back-to-top");
  var seeWork = document.querySelector("#seeMore");
+ var contactButton = document.querySelector("#contactButton")
 
  seeWork.addEventListener("click", toWork, false);
  scrollTop.addEventListener("click", toTop, false);
+
+//Open Contact Form 
+function openForm(){
+    var form = document.getElementById('contactForm');
+    if (form.style.display === 'none'){
+        form.style.display = 'block';
+    } else {
+        form.style.display = 'none';
+    }
+
+}
 
 // scroll to top
 function toTop(){
@@ -32,12 +40,13 @@ if(navigator.userAgent.toLowerCase().indexOf('firefox') !== -1){
 
 // scroll to mainContent
 function toWork(){
+var headerHeight = document.querySelector("header").clientHeight;
 if(navigator.userAgent.toLowerCase().indexOf('firefox') !== -1){
         //firefox
-        scrollTo(document.documentElement, (0 + header), 700);
+        scrollTo(document.documentElement, (0 + headerHeight), 700);
     }else{
         //rest of navigators
-        scrollTo(document.body, (0 + header), 700);
+        scrollTo(document.body, (0 + headerHeight), 700);
     };
  };
 
