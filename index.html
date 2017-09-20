@@ -93,8 +93,16 @@
             <hr>
             <div class="contactMe">
                 <h5>LET'S WORK TOGETHER</h5>
-                <p>get in touch</p>
+                <p id="contactButton" onclick="openForm()">get in touch</p>
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required="">
+                    <input type="text" name="email" placeholder="Your Email Address" required="">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea type="text"></textarea>
+                    <button id="submit" type="submit" name="submit">Send<i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                </form>
             </div>
+
         </div>
     </section>
 
