@@ -147,7 +147,7 @@ div {
 .myProject {
     display: flex;
     flex-direction: row;
-    margin: 0 auto 75px auto;
+    margin: 0 auto 125px auto;
 }
 .myProject:last-child {
     margin-bottom: 0;
@@ -238,6 +238,7 @@ div {
 form{
     width: 470px;
     margin-top: 50px;
+    display: none;
 }
 
 input {
@@ -266,6 +267,15 @@ textarea {
     color: white;
     border: none;
     letter-spacing: 2.5px;
+    background-color: #b2b2b2;
+    cursor: pointer;
+    transition: .5s;
+}
+#submit:hover {
+    background-color: #757575;
+}
+form i {
+    margin-left: 5px;
 }
 
 
