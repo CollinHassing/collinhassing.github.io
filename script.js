@@ -16,11 +16,13 @@ window.onscroll = function(){
  seeWork.addEventListener("click", toWork, false);
  scrollTop.addEventListener("click", toTop, false);
 
-//Open Contact Form 
+//Open Contact Form
 function openForm(){
     var form = document.getElementById('contactForm');
+    var formHeight = document.getElementById('contactForm').clientHeight;
     if (form.style.display === 'none'){
         form.style.display = 'block';
+        window.scrollBy(0, window.innerHeight)
     } else {
         form.style.display = 'none';
     }
